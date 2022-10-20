@@ -5,7 +5,7 @@ import ProductCard from '../../components/product-card/product-card.component';
 import { ProductsContext } from "../../contexts/products.context";
 
 
-import './shop.styles.scss'
+import './shop.styles.scss';
 
 const Shop = () => {
   const { products } = useContext(ProductsContext);
@@ -13,10 +13,11 @@ const Shop = () => {
   return (
     <div className="products-container">
       {products.map((product) => (
-       <ProductCard key={products.id} product={product}/>
+       <ProductCard key={products.id} product={product} />
       ))}
     </div>
   );
 };
+
 
 export default Shop;
