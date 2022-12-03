@@ -8,7 +8,12 @@ const ShrinkLabelStyles = css`
   font-size: 12px;
   color: ${mainColor};
 `;
-export const FromInputLabel = styled.label`
+
+type FromInputLabelProps = {
+  shrink?: boolean;
+}
+
+export const FromInputLabel = styled.label<FromInputLabelProps>`
   color: ${subColor};
   font-size: 16px;
   font-weight: normal;
